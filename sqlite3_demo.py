@@ -62,7 +62,7 @@ INSERT INTO users (username, email) VALUES
   ('user2', 'user2@example.com')
 ;
 """
-#execute_query(connection, create_users_query)   
+execute_query(connection, create_users_query)   
 
 select_users_query = "SELECT * from users"
 users = execute_read_query(connection, select_users_query)
